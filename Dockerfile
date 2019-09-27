@@ -2,19 +2,19 @@ FROM ruby:2.6
 
 RUN gem install github-pages
 
+RUN gem install bundler
+
 WORKDIR /usr/src/app
 
-COPY Gemfile ./
+COPY Gemfile Gemfile.lock ./
 
-#RUN chown -R app:app /usr/src/app
-
-#RUN bundle install --binstubs
+RUN bundle install --binstubs
 
 COPY . .
 
-#CMD bundle exec jekyll build
+CMD bundle exec jekyll build
 
-#CMD bundle exec jekyll serve --trace
+CMD bundle exec jekyll serve --trace
 
 # Build
 # docker build -t <tag_name>
