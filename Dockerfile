@@ -1,27 +1,26 @@
-FROM ruby:2.6.4-alpine3.10
+FROM ruby:2.6
 
-RUN apk add --no-cache g++ musl-dev make
-
-RUN apk add openssl openssl-dev ruby-dev
-
-RUN apk add --no-cache libstdc++
-
-RUN gem update --system
-
-RUN gem install bundler
-
-RUN gem install jekyll-watch
-
-RUN gem install jekyll
+RUN gem install github-pages
 
 WORKDIR /usr/src/app
 
 COPY Gemfile ./
 
-RUN bundle install --binstubs
+#RUN chown -R app:app /usr/src/app
+
+#RUN bundle install --binstubs
 
 COPY . .
 
-CMD bundle exec jekyll build
+#CMD bundle exec jekyll build
 
-CMD bundle exec jekyll serve --trace
+#CMD bundle exec jekyll serve --trace
+
+# Build
+# docker build -t <tag_name>
+
+# Generate a Gemfile.lock like this
+# docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app <tag_name> bundle install
+
+# Generate a new site with: 
+# docker run --rm -v "$PWD":/usr/src/app -w /usr/src/app <tag_name> bundle exec jekyll new . --force

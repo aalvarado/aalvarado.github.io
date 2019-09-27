@@ -1,6 +1,5 @@
-# frozen_string_literal: true
-
 source "https://rubygems.org"
 
-gem 'jekyll'
-gem 'jekyll-watch'
+gem "github-pages", group: :jekyll_plugins
+gem "activesupport"
+gem "tzinfo"
