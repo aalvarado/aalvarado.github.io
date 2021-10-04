@@ -2,7 +2,7 @@
 
 References:
 * https://stackoverflow.com/questions/18880024/start-ssh-agent-on-login/38980986#38980986
-* git config --global credential.helper /usr/share/doc/git/contrib/credential/libsecret/git-credential-libsecret
+* 
 
 First we need to create an SSH socket through an agent
 
