@@ -2,7 +2,6 @@
 
 References:
 * https://stackoverflow.com/questions/18880024/start-ssh-agent-on-login/38980986#38980986
-* 
 
 First we need to create an SSH socket through an agent
 
