@@ -1,4 +1,4 @@
-# How to configure private keys for Git use under Tmux
+# How to configure private keys for Git use under Tmux in Ubuntu and derivatives using Systemd
 
 References:
 * https://stackoverflow.com/questions/18880024/start-ssh-agent-on-login/38980986#38980986
