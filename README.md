@@ -1,5 +1,3 @@
-Hello everyone, I document things I might need later, things I'm thinking about and how to's I might find interesting
-
 # Projects
 - [Conway's Game of Life - terminal, Ncurses and Ruby implementation](https://github.com/aalvarado/gol)
 - [Jira Dark Theme](https://github.com/aalvarado/JiraDarkTheme)
