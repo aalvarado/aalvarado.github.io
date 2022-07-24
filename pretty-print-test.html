@@ -5,10 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>bookmarklet test</title>
-    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <a href="javascript: alert('Linky text');">Linky</a>
+    <a href="javascript:((() => {
+      if (!window.location.hostname === 'gist.github.com')
+        return;
+      [ '.js-header-wrapper',
+        '.pagehead',
+        '.js-quote-selection-container',
+        '.file-actions',
+        'footer'
+       ].forEach(e => document.querySelector(e).style.display = 'none')
+     })()">Pretty Format Gist for Printing</a>
   </body>
 </html>
 
