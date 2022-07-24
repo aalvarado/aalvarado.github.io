@@ -72,7 +72,8 @@
     </p>
     
     <textarea id="code">
-     if (window.location.hostname !== 'gist.github.com')
+javascript:((() => {
+      if (window.location.hostname !== 'gist.github.com')
         return;
              
       [ '.js-header-wrapper',
@@ -83,6 +84,8 @@
        ].forEach(e => document.querySelector(e).style.display = 'none')
      }))()
     </textarea>
+   
+     
   </body>
 </html>
 
