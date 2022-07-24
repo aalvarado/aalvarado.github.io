@@ -8,8 +8,9 @@
   </head>
   <body>
     <a href="javascript:((() => {
-      if (!window.location.hostname === 'gist.github.com')
+      if (window.location.hostname !== 'gist.github.com')
         return;
+             
       [ '.js-header-wrapper',
         '.pagehead',
         '.js-quote-selection-container',
