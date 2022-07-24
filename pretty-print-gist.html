@@ -24,6 +24,7 @@
         width: 100%;
         background-color: #222;
         color: #E6E6FA;
+        height: 14em;
       }
       a {
        color: #00BFFF;
@@ -51,6 +52,8 @@
       <li>Visit any gist that you want to view without distractions</li>
       <li>Click the newly installed bookmark</li>
     </ul>
+    <p>
+      Drag this link to the bookmark toolbar
     <a href="javascript:((() => {
       if (window.location.hostname !== 'gist.github.com')
         return;
@@ -62,7 +65,7 @@
         'footer'
        ].forEach(e => document.querySelector(e).style.display = 'none')
      }))()">pp-gist</a>
-    
+    <p>
     <p>
       This can be manually achieved by creating a new bookmark in the bookmark toolbar.
       The code below needs to be in the location input box. It has the same effect as dragging the link.
