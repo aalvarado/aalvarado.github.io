@@ -5,8 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>bookmarklet test</title>
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/roboto" type="text/css"/> 
+    <style>
+      
+      html {
+        background-color: #333;
+        color: #ccc;
+      }
+      body {
+        max-width: 80%;
+        margin: auto;
+        padding: 1em;
+        font-family: 'RobotoRegular';
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+  
+    <script >
+    </script>
   </head>
   <body>
+    <h1>
+      Pretty Print Gist Bookmarklet
+    </h1>
+    <p>
+      The following link can be dragged to the bookmarks toolbar and can be used as a `Bookmarklet` so that whenever you have a gist that you might want to print or save as a pdf file or any other format. it can be viewed without distractions.
+     
+      </p>
+    
+    <h2>
+      Installation
+    </h2>
+         
+    <ul>
+      <li>Drag the link to your bookmark toolbar</li>
+      <li>Visit any gist that you want to view without distractions</li>
+      <li>Click the newly installed bookmark</li>
+    </ul>
     <a href="javascript:((() => {
       if (window.location.hostname !== 'gist.github.com')
         return;
@@ -18,6 +54,24 @@
         'footer'
        ].forEach(e => document.querySelector(e).style.display = 'none')
      }))()">pp-gist</a>
+    
+    <p>
+      This can be manually achieved by creating a new bookmark in the bookmark toolbar.
+      The code below needs to be in the location input box. It has the same effect as dragging the link.
+    </p>
+    
+    <textarea id="code">
+     if (window.location.hostname !== 'gist.github.com')
+        return;
+             
+      [ '.js-header-wrapper',
+        '.pagehead',
+        '.js-quote-selection-container',
+        '.file-actions',
+        'footer'
+       ].forEach(e => document.querySelector(e).style.display = 'none')
+     }))()
+    </textarea>
   </body>
 </html>
 
