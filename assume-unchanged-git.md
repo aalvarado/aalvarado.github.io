@@ -1,3 +1,7 @@
+---
+title: How to temporarily ignore Git changes
+---
+
 # How to temporarily ignore Git changes
 
 Add current tracked files added but that you want to ignore:
