@@ -1,3 +1,6 @@
+---
+title: How to configure private keys for Git use under Tmux in Ubuntu and derivatives using Systemd
+---
 # How to configure private keys for Git use under Tmux in Ubuntu and derivatives using Systemd
 
 References:
@@ -6,7 +9,7 @@ References:
 First we need to create an SSH socket through an agent
 
 
-```
+```desktop
 # ~/.config/systemd/user/ssh-agent.service
 
 [Unit]
@@ -23,28 +26,28 @@ WantedBy=default.target
 
 Add it to the bash profile
 
-```
+```shell
 # ~/.bash_profile 
 
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 ```
 
 Enable it
-```bash
+```shell
 systemctl --user enable ssh-agent
 systemctl --user start ssh-agent
 ```
 
 
 Add keys to agent through ssh config
-```
+```shell
 # ~/.ssh/config
 AddKeysToAgent  yes
 ```
 
 Create the git credential helper and add it to gitconfig
 
-```bash
+```shell
 sudo apt-get install libsecret-1-0 libsecret-1-dev
 cd /usr/share/doc/git/contrib/credential/libsecret
 sudo make
