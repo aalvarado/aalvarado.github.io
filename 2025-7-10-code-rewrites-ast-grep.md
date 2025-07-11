@@ -31,6 +31,26 @@ Ripgrep is great but it is mostly a tool for searching inside files, not replaci
 
 The tool has been a breath of fresh air for migrations and finding patterns not quite achievable through Regex expressions can achive.
 
+In my case, one of the things that needed to change was
+```typescript
+(limit) => {
+  for (let somevar; somevar < limit; somevar++){
+  // ..
+  }
+})(123)
+
+// or
+
+(limit) => {
+let somevar;
+
+while(somevar <= limit) {
+  somevar++;
+  //or
+  somevar ++;
+}
+```
+
 Hope you find this tool useful and if you have any cool things you've done with it please share.
 
 
