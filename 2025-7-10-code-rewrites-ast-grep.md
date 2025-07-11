@@ -5,10 +5,9 @@ title: Better code rewrites that scale through ast-grep
 <img width="3228" height="1051" alt="image" src="https://github.com/user-attachments/assets/5a9f3423-56aa-4f2a-96bb-532cc42f74f5" />
 
 # Better code rewrites that scale through ast-grep
+2025-7-10
 
 https://github.com/ast-grep/ast-grep
-
-
 
 People who have worked with know I'm a fan of the terminal, abstraction and refactoring, ast-grep has been such a great addition to my toolbelt.
 
@@ -30,4 +29,8 @@ Enter ast-grep, written in Rust it is able to run without a Run time. Faster exe
 
 Ripgrep is great but it is mostly a tool for searching inside files, not replacing. Sd, another tool inspired by sed can be used for simple pattern replacements.
 
-Ast-grep is as if 
+The tool has been a breath of fresh air for migrations and finding patterns not quite achievable through Regex expressions can achive.
+
+Hope you find this tool useful and if you have any cool things you've done with it please share.
+
+
