@@ -7,7 +7,7 @@ title: Better code rewrites that scale through ast-grep
 # Better code rewrites that scale through ast-grep
 2025-7-10
 
-https://github.com/ast-grep/ast-grep
+[https://github.com/ast-grep/ast-grep](https://github.com/ast-grep/ast-grep)
 
 People who have worked with know I'm a fan of the terminal, abstraction and refactoring, ast-grep has been such a great addition to my toolbelt.
 
