@@ -1,5 +1,7 @@
+<!--
 ## Posts
 - [Code rewrites using ast-grep](2025-7-10-code-rewrites-ast-grep.md)
+-->
 
 ## Projects
 - [Conway's Game of Life - terminal, Ncurses and Ruby implementation](https://github.com/aalvarado/gol)
